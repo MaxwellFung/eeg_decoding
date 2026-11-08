@@ -1,0 +1,56 @@
+{
+  "perceptogram_commit": "54db0981aa26d2b2f8b56e2d4ad04c81d1419d35",
+  "reference_sha256": {
+    "EEG_bridge_transfer_learn/bridge/model.py": "742926e471e6fd75ec9bd63a4a91d91b25a22329f524213196a3425f16b9a722",
+    "EEG_bridge_transfer_learn/bridge/readout.py": "d62cd04ba07d178d43187cf80d04cdb583570ca8e1bedde27c86040e96a72cc9",
+    "EEG_bridge_transfer_learn/bridge/features.py": "c8a19b48dd034eb54c4af91cadd5195cec202266771aa902b0898acb2921808a",
+    "EEG_bridge_transfer_learn/bridge/reconstruction.py": "a4568202edc8663f915f55a9ebf4662d5a8b1ca4d5eae9bfa75c51f2aabf492c",
+    "EEG_perceptogram/modal_vgg_unclip.py": "878a2bff45cfb87b6249153e9867197f84814d2c4a76d9bda0199d7f6d3ad466",
+    "EEG_perceptogram/modal_vgg_img2img10.py": "beb0b19ce28a08a40d03a5485230cf994eed204a2d806a23c56e634860484161",
+    "EEG_perceptogram/retrieval.py": "dd071374027460949b87b8bcf09935b5e04c4fc70d4b2e5c8656c2172d66de42",
+    "production-final-diffusion-sub1 (3).ipynb": "b2ed16375e7c899f45c5bc64cd06a8312b01e8ba74ebd3f47b507f69ca862358"
+  },
+  "runtime_imports_from_reference_folders": false,
+  "baseline": "completed subject-01 VGG DIP + Perceptogram unCLIP run; optional img2img .4/guidance5",
+  "verification": {
+    "vgg": [
+      {
+        "profile": "subject01",
+        "predictor_bitwise_equal_reference": true,
+        "prediction_bitwise_equal_saved_cache": true,
+        "dip_two_step_bitwise_equal": true
+      },
+      {
+        "profile": "pooled",
+        "predictor_bitwise_equal_reference": true,
+        "prediction_bitwise_equal_saved_cache": true
+      }
+    ],
+    "clip_regression": {
+      "max_abs_difference": 1.4210854715202004e-13,
+      "diffusion_input_fp16_bitwise_equal": true
+    },
+    "clip_targets_compared": 8,
+    "clip_target_comparisons_bitwise_equal": true,
+    "all_ten_subject_input_shapes_checked": true,
+    "default_sampler_saved_pngs_byte_identical": [
+      0,
+      1
+    ],
+    "img2img_saved_pngs_byte_identical": [
+      0,
+      1
+    ],
+    "end_to_end_images": 2,
+    "additional_checks": [
+      "subject selection",
+      "configuration/cache guards",
+      "mean and sample SD aggregation",
+      "exact notebook metric function ASTs",
+      "download helper",
+      "ruff F checks",
+      "Python syntax"
+    ],
+    "scope": "Sampled numerical parity checks and two-image subject-01 end-to-end workflow; no full ten-subject rerun."
+  }
+}

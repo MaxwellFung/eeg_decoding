@@ -1,0 +1,34 @@
+{
+  "original_repository": "stabilityai/stable-diffusion-2-1-unclip",
+  "repository": "sd2-community/stable-diffusion-2-1-unclip",
+  "revision": "ac4aaff4a67d57bdab2e9faf277c33d8e49f4df4",
+  "provenance": "Mirror identifies itself as a copy of the deprecated original repository; historical author checkpoint equality is not independently established. All used files are pinned and verified.",
+  "files": {
+    "feature_extractor/preprocessor_config.json": {
+      "size": 466,
+      "git_blob_sha1": "fb1692ff11ed6b3dee0634f577193bb23c0d37ec"
+    },
+    "image_encoder/config.json": {
+      "size": 560,
+      "git_blob_sha1": "9c841dd0314e27141ed01a24df1734e407a95c4a"
+    },
+    "image_encoder/pytorch_model.bin": {
+      "size": 2528481905,
+      "git_blob_sha1": "e85ed592b63095bf2cda08e30956b233048e2de6",
+      "sha256": "3d3ec1e66737f77a4f3bc2df3c52eacefc69ce7825e2784183b1d4e9877d9193"
+    },
+    "image_noising_scheduler/scheduler_config.json": {
+      "size": 424,
+      "git_blob_sha1": "03be03e1b4ad554235f41609e8810336b29a3d91"
+    },
+    "image_normalizer/config.json": {
+      "size": 156,
+      "git_blob_sha1": "57dc5a4469a2484928f46098aaa51b52111c6da6"
+    },
+    "image_normalizer/diffusion_pytorch_model.bin": {
+      "size": 9383,
+      "git_blob_sha1": "2f0138650bc0c109ee2db05d8b698ab5231b26f8",
+      "sha256": "62d9bea2335c36ba4aad0dee4d406ecbd1011b1364b0b88c34141bef471824c8"
+    }
+  }
+}
